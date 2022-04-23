@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Photography Portfolio</title>
+        <!-- Bootstrap css link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- google fonts link -->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- font-awesome link -->
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <!-- my css file -->
+        <link rel="stylesheet" href="styles/styles.css"/>
+        <!-- gets the favicon to the separator head title -->
+        <link rel="icon" href="img/favicon.ico">
+      </head>
+<body>
+    
+    <!-- =============== navbar =============== -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbarGeral" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/AMC_logo.png" alt="AMC logo" width="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navBarMenu" id="navbarSupportedContent">
+                <div class="navbarLinksPosition">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- =============== end of navbar =============== -->
+    
+
+    
+    <div class="container-fluid content" id="top">
+
+        <!-- Photo Portfolio section -->
+        <div class="row photoPortfolio" id="frontend">
+            <div class="photoPortfolioOption photoPortfolio">
+                <div class="col-6">
+                    <h2>Photography Portfolio</h2>
+                    <div class="instagramPhotoPortfolio">
+                        <h4>Interested? Check out my photography instagram page:</h4>
+                        <a href="https://www.instagram.com/paraeolhafoto/">
+                            <i class="fab fa-instagram instaIcon fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="myGallery pb-5">
+                <div class="item">
+                    <img src="./img/portf_Fotografia/candeeiro_mar.jpg" alt="chandelier and sea landscape"/>
+                    <span class="caption">Ericeira</span>
+                </div>
+                <div class="item">
+                    <img src="./img/portf_Fotografia/caminho_smp.jpg" alt="wooden path to the beach and sea"/>
+                    <span class="caption">Salir do Porto</span>
+                </div>
+                <div class="item">
+                    <img src="./img/portf_Fotografia/mata_rainhaleonor_caminho.jpg" alt="path amoung the trees"/>
+                    <span class="caption">Mata Rainha D. Leonor, in Caldas da Rainha</span>
+                </div>
+                <div class="item">
+                    <img src="./img/portf_Fotografia/pordosol_foz_canicas.jpg" alt="sunset"/>
+                    <span class="caption">Sunset on Foz do Arelho's Beach</span>
+                </div>
+                <div class="item">
+                    <img src="./img/portf_Fotografia/pordosol_azul_telhados.jpg" alt="sunset"/>
+                    <span class="caption">Sunset on Caldas da Rainha</span>
+                </div>
+                <div class="item">
+                    <img src="./img/portf_Fotografia/folhas_ceu.jpg" alt="leafs and the sky"/>
+                    <span class="caption">Looking at the sky on Mata Rainha D. Leonor, in Caldas da Rainha</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- footer section -->
+        <div class="row footerSection pt-5" id="footer">
+            <div class="col-3 mb-2">
+                <div class="col-md-3 text-center footerContact">
+                    <div class="">
+                        <a href="https://www.linkedin.com/in/ana-margarida-costa-a2bba713a">
+                            <i class="fab fa-linkedin fa-2x "></i>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="https://www.instagram.com/paraeolhafoto/">
+                            <i class="fab fa-instagram fa-2x "></i>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="https://www.facebook.com/anamargarida.costa.58/">
+                            <i class="fab fa-facebook-square fa-2x "></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 copyFooter">
+                <h5>Copyright &copy AMC</h5>
+            </div>
+        </div>
+        <!-- end of footer -->
+
+        <!-- end of Photo Portfolio -->
+
+    </div>
+    
+
+    
+    <!-- arrow section -->
+    <a href="#top" class="arrowTop arrowTopPhoto">
+        <i class="fas fa-long-arrow-alt-up"></i>
+    </a>
+    <!-- end of arrow section -->
+  
+
+    <!-- my js file -->
+    <script src="js/App.js"></script>
+
+    <!-- Bootstrap js links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+</body>
+</html>

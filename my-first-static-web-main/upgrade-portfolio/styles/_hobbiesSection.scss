@@ -1,0 +1,149 @@
+.hobbiesSection {
+  @include flexCenter(row, center);
+
+  background-color: $tan;
+  height: 800px;
+
+  .hobbiesContent {
+    width: 60vw;
+    height: 500px;
+    margin-top: 50px;
+
+    h1 {
+      padding-left: 30px;
+    }
+
+    .hobbiesImg {
+      @include flexCenter(row, space-around);
+      flex-wrap: wrap;
+      width: 60vw;
+      height: 70vh;
+
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+/* ================== media queries ================== */
+
+/* Extra small devices with 576px and down */
+@media only screen and (max-width: 576px) {
+  .hobbiesSection {
+    height: 1600px;
+
+    .hobbiesCol {
+      height: 1400px;
+
+      h1,
+      h5 {
+        text-align: center;
+      }
+    }
+    .hobbiesContent {
+      .hobbiesImg {
+        img {
+          margin-right: 30px;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only all and (min-width: 576px) and (max-width: 599px) {
+  .hobbiesSection {
+    height: 1600px;
+
+    .hobbiesCol {
+      height: 1400px;
+
+      h1,
+      h5 {
+        text-align: center;
+      }
+    }
+    .hobbiesContent {
+      .hobbiesImg {
+        img {
+          margin-right: 30px;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only all and (min-width: 600px) and (max-width: 767px) {
+  .hobbiesSection {
+    height: 1600px;
+
+    .hobbiesCol {
+      height: 1400px;
+
+      h1,
+      h5 {
+        text-align: center;
+      }
+    }
+    .hobbiesContent {
+      .hobbiesImg {
+        img {
+          margin-right: 30px;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only all and (min-width: 768px) and (max-width: 991px) {
+  .hobbiesSection {
+    height: 1100px;
+
+    .hobbiesCol {
+      height: 800px;
+
+      h1,
+      h5 {
+        text-align: center;
+      }
+    }
+    .hobbiesContent {
+      .hobbiesImg {
+        img {
+          margin-right: 30px;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only all and (min-width: 992px) and (max-width: 1194px) {
+  .hobbiesSection {
+    height: 1000px;
+
+    .hobbiesCol {
+      height: 800px;
+
+      h1,
+      h5 {
+        text-align: center;
+      }
+    }
+    .hobbiesContent {
+      .hobbiesImg {
+        img {
+          margin-right: 20px;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}

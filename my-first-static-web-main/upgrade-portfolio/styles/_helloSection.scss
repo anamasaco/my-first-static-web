@@ -1,0 +1,146 @@
+.helloSection {
+  @include containerSize();
+  @include flexCenter(row, start);
+
+  background: url(../img/pes_peq.jpg) no-repeat;
+  background-size: cover;
+  min-height: calc(100vh - 100px);
+  opacity: 0.8;
+  position: relative;
+
+  &::before {
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #be904e;
+  }
+
+  .helloColDiv {
+    height: 300px;
+  }
+
+  h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+}
+
+/* ================== media queries ================== */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+  .helloSection {
+    background-position: center center;
+    height: 700px;
+    padding: 0;
+
+    .helloColDiv {
+      height: 200px;
+      width: 450px;
+    }
+
+    h4 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 31px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 23px;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .helloSection {
+    background-position: center center;
+    height: 500px;
+
+    .helloColDiv {
+      height: 200px;
+    }
+
+    h4 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 31px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 23px;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .helloSection {
+    background-position: center center;
+    height: 600px;
+
+    h4 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 37.5px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only all and (min-width: 992px) and (max-width: 1194px) {
+  .helloSection {
+    background-position: center center;
+
+    h4 {
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
+
+/* Extra-Large devices (laptops/desktops, 1200px and up) */
+@media only all and (min-width: 1200px) {
+  .helloSection {
+    background-position: center center;
+    height: 700px;
+
+    h4 {
+      font-size: 23px;
+      margin-bottom: 29px;
+    }
+    h1 {
+      font-size: 45px;
+      margin-bottom: 29px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
+}

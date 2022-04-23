@@ -1,0 +1,65 @@
+.footerSection {
+  @include footerSize();
+  @include flexCenter(column, center);
+
+  background-color: $black;
+  color: white;
+
+  .footerContact {
+    @include flexCenter(row, center);
+
+    text-align: center;
+    width: 25vw;
+  }
+
+  a {
+    margin-right: 15px;
+    color: $white;
+  }
+  a:hover {
+    color: $camel;
+  }
+
+  .copyFooter {
+    text-align: center;
+    width: 20vw;
+  }
+}
+
+/* ================== media queries ================== */
+
+/* Extra small devices with 576px and down */
+@media only screen and (max-width: 576px) {
+  .footerSection {
+    .copyFooter {
+      width: 40vw;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only all and (min-width: 576px) and (max-width: 599px) {
+  .footerSection {
+    .copyFooter {
+      width: 40vw;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only all and (min-width: 600px) and (max-width: 767px) {
+  .footerSection {
+    .copyFooter {
+      width: 40vw;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only all and (min-width: 768px) and (max-width: 991px) {
+  .footerSection {
+    .copyFooter {
+      width: 40vw;
+    }
+  }
+}

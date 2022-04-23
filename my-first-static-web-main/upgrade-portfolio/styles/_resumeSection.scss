@@ -1,0 +1,490 @@
+.resumeSection {
+  // @include containerSize();
+  height: 900px;
+  @include flexCenter(row, space-around);
+
+  background-color: $lightFrenchBeige;
+  text-align: justify;
+
+  h1 {
+    color: $cafeNoir;
+    font-size: 50px;
+  }
+  p {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  .resumeImg {
+    @include flexCenter(row, center);
+
+    background-color: $TanDarker;
+    padding: 20px;
+    height: 500px;
+    width: 500px;
+    border-radius: 250px;
+  }
+  .resumeText {
+    padding-left: 50px;
+  }
+  .resumeOptions {
+    max-height: 10vh;
+    padding-top: 10px;
+
+    button {
+      background-color: $cafeNoir;
+      color: $white;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 15px 10px 15px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+
+      &:hover {
+        background-color: $golderBrown;
+        border: $cafeNoir solid 1px;
+      }
+    }
+  }
+}
+.resumeContent {
+  background-color: $cafeNoir;
+  color: $white;
+  border-radius: 20px;
+  height: 70vh;
+  width: 43vw;
+  padding: 30px;
+
+  .resumeContentFlow {
+    overflow: auto;
+    height: 60vh;
+    width: 39vw;
+    padding: 10px;
+  }
+  .resumeCategories {
+    margin-right: 20px;
+    // background-color: green;
+  }
+
+  .progress {
+    margin-bottom: 20px;
+  }
+  .progress-bar {
+    background-color: $camel;
+  }
+  .softSkillsContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    text-align: center;
+
+    p {
+      background-color: $copper;
+      border-radius: 20px;
+      width: 150px;
+      height: 8vh;
+      padding: 10px;
+      margin-bottom: 20px;
+      margin-right: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
+    p:hover {
+      background-color: $lightFrenchBeige;
+      color: $blackChocolate;
+    }
+  }
+  .softSkillsTextDiv {
+    width: 36vw;
+    height: 55vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .experienceContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    padding: 0;
+  }
+  .expContentDiv,
+  .educationContentDiv {
+    @include flexCenter(row, center);
+
+    background-color: $camel;
+    border-radius: 15px;
+    padding: 20px;
+    height: 27vh;
+    width: 36vw;
+    margin-left: -10px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+      text-align: left;
+      color: $white !important;
+      padding-right: 10px;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      text-align: justify;
+      padding-right: 10px;
+    }
+  }
+  .expContentDiv:hover,
+  .educationContentDiv:hover {
+    background-color: $champagne;
+
+    p,
+    h4 {
+      color: $blackChocolate !important;
+    }
+  }
+  .expDate,
+  .educationDate {
+    width: 8vw;
+    margin-right: 15px;
+
+    p {
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+}
+
+/* ========= end of scroll bar ========= */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-top-left-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0.625em;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $golderBrown;
+  border-radius: 0.625em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $camel;
+  border-radius: 0.625em;
+}
+/* ========= end of scroll bar ========= */
+
+/* ================== media queries ================== */
+
+/* Extra small devices with 576px and down */
+@media only screen and (max-width: 576px) {
+  .resumeSection {
+    height: 1150px !important;
+
+    h1 {
+      text-align: center;
+    }
+
+    .resumeImg {
+      height: 400px;
+      width: 400px;
+      margin-bottom: 40px;
+
+      img {
+        height: 250px;
+        width: 250px;
+      }
+    }
+    .resumeText {
+      width: 90vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 50px;
+    }
+  }
+
+  .resumeOptions {
+    width: 410px;
+    margin-bottom: 15px;
+
+    button {
+      font-size: 13px;
+      margin-right: 5px;
+    }
+  }
+  .resumeContent {
+    width: 71vw;
+
+    .expContentDiv,
+    .educationContentDiv {
+      overflow: hidden;
+    }
+    .resumeContentFlow {
+      width: 60vw;
+      height: 58vh;
+      padding-left: 20px;
+    }
+    .softSkillsTextDiv {
+      width: 50vw;
+      height: 50vh;
+      padding-top: 50px;
+      margin-left: 20px;
+
+      p {
+        font-size: 13px;
+        width: 120px;
+        height: 8vh;
+      }
+    }
+    .expContentDiv,
+    .educationContentDiv {
+      width: 51vw;
+
+      h4 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .experienceContent {
+      width: 53vw;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only all and (min-width: 576px) and (max-width: 599px) {
+  .resumeSection {
+    height: 1150px !important;
+
+    h1 {
+      text-align: center;
+    }
+
+    .resumeImg {
+      height: 400px;
+      width: 400px;
+      margin-bottom: 40px;
+
+      img {
+        height: 250px;
+        width: 250px;
+      }
+    }
+  }
+
+  .resumeOptions {
+    width: 410px;
+    margin-bottom: 15px;
+
+    button {
+      font-size: 13px;
+      margin-right: 5px;
+    }
+  }
+  .resumeContent {
+    width: 69vw;
+
+    .expContentDiv,
+    .educationContentDiv {
+      overflow: hidden;
+    }
+    .resumeContentFlow {
+      width: 58vw;
+      height: 58vh;
+      padding-left: 20px;
+    }
+    .softSkillsTextDiv {
+      width: 50vw;
+      height: 50vh;
+      padding-top: 50px;
+      margin-left: 10px;
+
+      p {
+        font-size: 13px;
+        width: 120px;
+        height: 8vh;
+      }
+    }
+    .expContentDiv,
+    .educationContentDiv {
+      width: 52vw;
+
+      h4 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .experienceContent {
+      width: 47vw;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only all and (min-width: 600px) and (max-width: 767px) {
+  .resumeSection {
+    height: 1150px !important;
+
+    .resumeImg {
+      height: 400px;
+      width: 400px;
+      margin-bottom: 40px;
+
+      img {
+        height: 250px;
+        width: 250px;
+      }
+    }
+  }
+
+  .resumeOptions {
+    width: 410px;
+    margin-bottom: 15px;
+
+    button {
+      font-size: 13px;
+      margin-right: 5px;
+    }
+  }
+  .resumeContent {
+    width: 66vw;
+
+    .expContentDiv,
+    .educationContentDiv {
+      overflow: hidden;
+    }
+    .resumeContentFlow {
+      width: 54vw;
+      height: 58vh;
+      // overflow: hidden;
+      padding-left: 20px;
+    }
+    .softSkillsTextDiv {
+      width: 45vw;
+      height: 50vh;
+      padding-top: 50px;
+      margin-left: 20px;
+
+      p {
+        font-size: 13px;
+        width: 120px;
+        height: 8vh;
+      }
+    }
+    .expContentDiv,
+    .educationContentDiv {
+      width: 47vw;
+
+      h4 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .experienceContent {
+      width: 47vw;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only all and (min-width: 768px) and (max-width: 991px) {
+  .resumeSection {
+    height: 1150px !important;
+
+    .resumeImg {
+      height: 400px;
+      width: 400px;
+      margin-bottom: 40px;
+
+      img {
+        height: 250px;
+        width: 250px;
+      }
+    }
+  }
+
+  .resumeOptions {
+    width: 500px;
+    margin-bottom: 15px;
+  }
+  .resumeContent {
+    width: 59vw;
+
+    .expContentDiv,
+    .educationContentDiv {
+      overflow: hidden;
+    }
+    .resumeContentFlow {
+      width: 51vw;
+      height: 58vh;
+      // overflow: hidden;
+      padding-left: 20px;
+    }
+    .softSkillsTextDiv {
+      width: 45vw;
+    }
+    .experienceContent {
+      width: 47vw;
+    }
+    .expContentDiv,
+    .educationContentDiv {
+      width: 47vw;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only all and (min-width: 992px) and (max-width: 1194px) {
+  .resumeSection {
+    height: 700px !important;
+
+    .resumeImg {
+      height: 350px;
+      width: 350px;
+
+      img {
+        height: 250px;
+        width: 250px;
+      }
+    }
+  }
+
+  .resumeOptions {
+    width: 500px;
+    margin-bottom: 15px;
+  }
+  .resumeContent {
+    width: 46vw;
+
+    .expContentDiv,
+    .educationContentDiv {
+      overflow: hidden;
+    }
+  }
+}

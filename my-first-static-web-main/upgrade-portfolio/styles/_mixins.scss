@@ -1,0 +1,16 @@
+// create mixin, that is +/- like a function that can be used several times
+@mixin containerSize() {
+  height: 700px;
+  // width: 100%;
+}
+
+@mixin flexCenter($direction, $content) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: center;
+}
+
+@mixin footerSize() {
+  height: 150px;
+}

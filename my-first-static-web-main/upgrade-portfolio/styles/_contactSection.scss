@@ -1,0 +1,102 @@
+.contactSection {
+  @include containerSize();
+  @include flexCenter(row, center);
+
+  background-color: $lightFrenchBeige;
+  color: white;
+
+  h5 {
+    color: $blackChocolate;
+  }
+
+  .contactSectionMain {
+    height: 500px;
+  }
+  .contactFormText {
+    label {
+      color: $blackChocolate !important;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    input,
+    textarea {
+      margin-bottom: 20px;
+    }
+  }
+  .btnSubmitDiv {
+    display: flex;
+    justify-content: end;
+
+    a {
+      background-color: $blackChocolate;
+      color: $white;
+    }
+    a:hover {
+      background-color: $bistre;
+      color: $champagne;
+    }
+  }
+}
+
+/* ================== media queries ================== */
+
+/* Extra small devices with 576px and down */
+@media only screen and (max-width: 576px) {
+  .contactSection {
+    height: 850px;
+
+    h1,
+    h5 {
+      text-align: center;
+    }
+
+    .contactSectionMain {
+      height: 680px;
+      width: 400px;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only all and (min-width: 576px) and (max-width: 599px) {
+  .contactSection {
+    height: 850px;
+
+    h1,
+    h5 {
+      text-align: center;
+    }
+
+    .contactSectionMain {
+      height: 650px;
+      width: 400px;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only all and (min-width: 600px) and (max-width: 767px) {
+  .contactSection {
+    height: 850px;
+
+    h1,
+    h5 {
+      text-align: center;
+    }
+
+    .contactSectionMain {
+      height: 650px;
+      width: 400px;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only all and (min-width: 768px) and (max-width: 991px) {
+  .contactSection {
+    h1,
+    h5 {
+      text-align: center;
+    }
+  }
+}

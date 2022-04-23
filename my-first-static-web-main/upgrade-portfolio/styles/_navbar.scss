@@ -1,0 +1,57 @@
+.navbarGeral {
+  @include flexCenter(row, flex-end);
+
+  background-color: $black;
+  font-size: 20px;
+  padding-left: 20px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  // width: 100vw;
+  z-index: 100;
+  /* z-index works pretty much like a layer:
+   the higher the z-index value, the greater
+   it will allow the navigation tag to stay on top
+   of other tags */
+
+  ul li a {
+    color: white !important;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  ul li a:hover {
+    color: $camel !important;
+    font-size: 25px;
+  }
+}
+
+/* ================== media queries ================== */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+  .navbarGeral {
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .navbarGeral {
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navbarGeral {
+    width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only all and (min-width: 992px) {
+  .navbarGeral {
+    width: 100% !important;
+  }
+}

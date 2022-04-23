@@ -1,0 +1,157 @@
+.aboutMeSection {
+  @include flexCenter(row, space-around);
+  height: 700px !important;
+  flex-wrap: wrap;
+
+  background-color: $camel;
+  text-align: justify;
+
+  h1 {
+    color: $tan;
+    font-size: 50px;
+  }
+  p {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .aboutMeImg {
+    @include flexCenter(row, center);
+
+    background-color: $tan;
+    padding: 20px;
+    height: 500px;
+    width: 500px;
+    border-radius: 250px;
+  }
+  .aboutMeText {
+    padding-right: 20px;
+  }
+}
+
+/* ================== media queries ================== */
+
+/* Extra small devices with 576px and down */
+@media only screen and (max-width: 576px) {
+  .aboutMeSection {
+    height: 1150px !important;
+
+    h1 {
+      text-align: center;
+    }
+
+    .aboutMeImg {
+      margin-top: 70px;
+      margin-bottom: 10px;
+      height: 400px;
+      width: 400px;
+
+      img {
+        height: 230px;
+        width: 230px;
+      }
+    }
+    .aboutMeText {
+      margin-bottom: 50px;
+      width: 450px;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only all and (min-width: 576px) and (max-width: 599px) {
+  .aboutMeSection {
+    height: 1250px !important;
+
+    h1 {
+      text-align: center;
+    }
+
+    .aboutMeImg {
+      margin-top: 70px;
+      margin-bottom: 10px;
+      height: 400px;
+      width: 400px;
+
+      img {
+        height: 230px;
+        width: 230px;
+      }
+    }
+    .aboutMeText {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only all and (min-width: 600px) and (max-width: 767px) {
+  .aboutMeSection {
+    height: 1150px !important;
+
+    h1 {
+      text-align: center;
+    }
+
+    .aboutMeImg {
+      margin-top: 70px;
+      margin-bottom: 10px;
+      height: 400px;
+      width: 400px;
+
+      img {
+        height: 230px;
+        width: 230px;
+      }
+    }
+    .aboutMeText {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only all and (min-width: 768px) and (max-width: 991px) {
+  .aboutMeSection {
+    height: 1150px !important;
+
+    h1 {
+      text-align: center;
+    }
+
+    .aboutMeImg {
+      margin-top: 70px;
+      margin-bottom: 10px;
+      height: 400px;
+      width: 400px;
+
+      img {
+        height: 230px;
+        width: 230px;
+      }
+    }
+    .aboutMeText {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only all and (min-width: 992px) and (max-width: 1194px) {
+  .aboutMeSection {
+    height: 700px !important;
+
+    .aboutMeImg {
+      height: 350px;
+      width: 350px;
+
+      img {
+        height: 230px;
+        width: 230px;
+      }
+    }
+    .aboutMeText {
+      padding-right: 20px;
+    }
+  }
+}

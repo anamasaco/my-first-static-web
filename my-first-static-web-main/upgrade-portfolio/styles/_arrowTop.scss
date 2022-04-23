@@ -1,0 +1,18 @@
+.arrowTop {
+  @include flexCenter(row, center);
+
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+  right: 30px;
+  background: $cafeNoir;
+  color: $tan;
+  border-radius: 30px;
+  font-size: 25px;
+  &:hover {
+    text-decoration: none;
+    color: $camel;
+    align-items: center;
+  }
+}

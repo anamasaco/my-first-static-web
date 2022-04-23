@@ -1,0 +1,143 @@
+.portfolioSection {
+  @include containerSize();
+  @include flexCenter(row, space-around);
+
+  background-color: $white;
+  text-align: justify;
+
+  h1 {
+    color: $cafeNoir;
+    font-size: 50px;
+  }
+  p {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .portfolioOption {
+    @include flexCenter(row, center);
+
+    height: 60vh;
+
+    .col-6 {
+      @include flexCenter(column, center);
+
+      h2 {
+        color: $copper;
+      }
+    }
+  }
+
+  .frontendPortfolioImg,
+  .photosPortfolioImg {
+    @include flexCenter(column, center);
+
+    background-color: $tan;
+    padding: 20px;
+    height: 350px;
+    width: 350px;
+    border-radius: 200px;
+    margin-bottom: 20px;
+    border: none;
+
+    &:hover {
+      background-color: $lightFrenchBeige;
+    }
+  }
+}
+
+/* ================== media queries ================== */
+
+/* Extra small devices with 576px and down */
+@media only screen and (max-width: 576px) {
+  .portfolioSection {
+    height: 500px;
+
+    .frontendPortfolio,
+    .photosPortfolio {
+      h2 {
+        text-align: center;
+        width: 30vw;
+      }
+    }
+
+    .frontendPortfolioImg,
+    .photosPortfolioImg {
+      height: 200px;
+      width: 200px;
+
+      img {
+        height: 120px;
+        width: 120px;
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only all and (min-width: 576px) and (max-width: 599px) {
+  .portfolioSection {
+    height: 500px;
+
+    .frontendPortfolio,
+    .photosPortfolio {
+      h2 {
+        text-align: center;
+        width: 30vw;
+      }
+    }
+
+    .frontendPortfolioImg,
+    .photosPortfolioImg {
+      height: 250px;
+      width: 250px;
+
+      img {
+        height: 150px;
+        width: 150px;
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only all and (min-width: 600px) and (max-width: 767px) {
+  .portfolioSection {
+    height: 500px;
+
+    .frontendPortfolio,
+    .photosPortfolio {
+      h2 {
+        text-align: center;
+        width: 30vw;
+      }
+    }
+
+    .frontendPortfolioImg,
+    .photosPortfolioImg {
+      height: 250px;
+      width: 250px;
+
+      img {
+        height: 150px;
+        width: 150px;
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only all and (min-width: 768px) and (max-width: 991px) {
+  .portfolioSection {
+    .frontendPortfolioImg,
+    .photosPortfolioImg {
+      height: 300px;
+      width: 300px;
+
+      img {
+        height: 200px;
+        width: 200px;
+      }
+    }
+  }
+}
